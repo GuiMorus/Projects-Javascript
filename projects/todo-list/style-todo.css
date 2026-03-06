@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+html, body {
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.self-container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #ffffff;
+    margin: 100px auto;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2{
+    color: #002765;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app img{
+    width: 20px;
+    margin-left: 10px;
+}
+
+.self-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #EDEEF0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+}
+
+button{
+    padding: 16px 40px;
+    outline: none;
+    background: #FF5945;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+button:active{
+    background: #ad3c2f;
+}
+
+ul li{
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555555;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #EDEEF0;
+}
+
+ul li span:active{
+    color: red;
+}
+
+.self-checked{
+    color: #555555;
+    text-decoration: line-through;
+}
+
+.self-checked::before{
+    background-image: url(./images/checked.png);
+}
+
+#alerta{
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#alerta.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -10px);
+}

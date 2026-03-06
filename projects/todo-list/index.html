@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style-todo.css">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <title>To-do List App</title>
+</head>
+<body>
+    <!-- Alert Box -->
+    <div id="alerta" class="w-72 absolute top-10">
+        <div role="alert" class="rounded-md border border-amber-500 bg-amber-50 shadow-sm">
+            <div class="flex items-start gap-4 p-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-mt-0.5 size-6 text-amber-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"></path>
+                </svg>
+
+                <div class="flex-1">
+                    <strong class="block leading-tight font-medium text-amber-800"> Alerta </strong>
+
+                    <p class="mt-0.5 text-sm text-amber-700">
+                        Digite uma tarefa antes de adicionar
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container do App -->
+    <div class="self-container">
+        <div class="todo-app">
+            <h2 class="flex font-black text-lg">Lista de Tarefas <img src="./images/icon.png" alt=""></h2>
+
+            <!-- Input e Botão -->
+            <div class="self-row">
+                <input type="text" id="input-box" placeholder="Digite a sua tarefa">
+                <button onclick="addTask()">Adicionar</button>
+            </div>
+
+            <!-- Lista -->
+            <ul id="list-container"></ul>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
