@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(135deg, #FFFFFF, #D4D4D4);
+    min-height: 100vh;
+}

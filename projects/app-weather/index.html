@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style-weather.css">
+    <title>Weather App</title>
+</head>
+<body id="main">
+    <div class="card">
+        <h1 style="margin-bottom: 20px;">Weather App</h1>
+        <div class="search">
+            <input id="inputS" type="text" placeholder="nome da cidade" spellcheck="false">
+            <button onclick="verificar()"><img src="./imagens/search.png" alt="search"></button>
+        </div>
+        <div class="weather">
+            <img src="./imagens/rain.png" alt="icon image" class="weather-icon">
+            <h1 class="temp">-</h1>
+            <h2 class="city">digite a cidade</h2>
+            <div class="details">
+
+                <div class="col">
+                    <img src="./imagens/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">0%</p>
+                        <p>Humidade</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="./imagens/wind.png" alt="">
+                    <div>
+                        <p class="wind">0 km/h</p>
+                        <p>Velocidade do vento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const apiKey = "917bd52be9cd529aa3bdf074628aed8f"
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?units=metric`
+        const weatherIcon = document.querySelector(".weather-icon")
+
+        // Conectando com a API
+        async function checkWeather(cidade, pais='br') {
+            const response = await fetch(apiUrl + `&q=${cidade},${pais}` + `&APPID=${apiKey}`)
+            let dados = await response.json()   // JSON com as informações
+            console.log(dados)
+
+            // Modificando pagina
+            document.querySelector('.city').innerHTML = dados.name
+            document.querySelector('.temp').innerHTML = dados.main['temp'].toFixed(0) + "ºC"
+            document.querySelector('.humidity').innerHTML = dados.main['humidity'] + "%"
+            document.querySelector('.wind').innerHTML = dados.wind['speed'] + " Km/h"
+
+            // Modificando icone
+            switch(dados.weather[0].main){
+                case 'Clouds':
+                    weatherIcon.src = './imagens/clouds.png';
+                    break;
+                case 'Clear':
+                    weatherIcon.src = './imagens/clear.png';
+                    break;
+                case 'Drizzle':
+                    weatherIcon.src = './imagens/drizzle.png';
+                    break;
+                case 'Mist':
+                    weatherIcon.src = './imagens/mist.png';
+                    break;
+                case 'Rain':
+                    weatherIcon.src = './imagens/rain.png';
+                    break;
+                case 'Snow':
+                    weatherIcon.src = './imagens/snow.png';
+                default:
+            }
+
+            // Mostrando card
+            document.querySelector(".weather").style.display = "block"
+
+            // Mudando cor do fundo dependendo da temperatura
+            let temperatura = dados.main['temp']
+            const fundo = document.querySelector('#main')
+            if (temperatura < 1) {
+                fundo.style.background = '#5F82CC'
+            }else if (temperatura <= 15) {
+                fundo.style.background = '#B0F2FF'
+            }else if(temperatura <= 25){
+                fundo.style.background = '#9EE799'
+            }else if (temperatura <= 32) {
+                fundo.style.background = '#EEEB31'
+            }else if (temperatura <= 36) {
+                fundo.style.background = '#E9911E'
+            }else if(temperatura > 36){
+                fundo.style.background = '#E93D1E'
+            }else {
+                fundo.style.background = '#222222'
+            }
+        }
+        
+        // Botão para verificar temperatura
+        function verificar(){
+            // Verificando texto
+            let resultado = document.querySelector('#inputS').value.trim()
+            if(resultado.search(',') >= 0){
+                const city = resultado.split(',')
+                checkWeather(city[0].trim(), city[1].trim())
+            }else{
+                checkWeather(resultado.trim())
+            }
+            
+        }
+
+        // Verificando enter
+        const input = document.querySelector('#inputS')
+        input.addEventListener("keydown", (e) => {
+            if(e.key === "Enter"){
+                verificar()
+            }
+        })
+
+        
+    </script>
+</body>
+</html>
