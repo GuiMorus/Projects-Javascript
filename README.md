@@ -27,9 +27,7 @@ O **JavaScript** é o coração de todos os projetos.
 Todo o código foi desenvolvido utilizando **JavaScript Vanilla**, permitindo entender melhor como funcionam a manipulação de elementos da página, eventos e lógica das aplicações web.
 
 ### 🖌 Tailwind
-O **Tailwind** CSS foi utilizado em alguns projetos para facilitar a estilização e tornar o desenvolvimento mais rápido.
-
-Mesmo utilizando o framework, também aplico **CSS3 puro** sempre que necessário para personalizações específicas.
+O **Tailwind** CSS foi utilizado em alguns projetos para facilitar a estilização e tornar o desenvolvimento mais rápido e utilizar componentes prontos na internet. Mesmo utilizando o framework, também aplico **CSS3 puro** sempre que necessário para personalizações específicas.
 
 ### ⚙ Vite
 O **Vite** foi utilizado como ferramenta de building para preparar o ambiente de desenvolvimento, permitindo trabalhar com as tecnologias de forma mais rápida, organizada e eficiente.
@@ -38,6 +36,7 @@ O **Vite** foi utilizado como ferramenta de building para preparar o ambiente de
 
 ### 🌨 Weather App
 ![GIF Weather App](./public/weather-app.gif)
+
 Aplicativo que permite verificar a **temperatura e as condições climáticas de uma cidade pesquisada pelo usuário**.
 
 O projeto realiza uma consulta a uma **API gratuita de clima**, exibindo os dados em uma interface simples e dinâmica.
@@ -48,6 +47,7 @@ No JavaScript, a aplicação gera automaticamente a requisição correta para a 
 
 ### 📝 TO-DO List
 ![GIF To-Do App](./public/todo-app.gif)
+
 Uma **lista de tarefas dinâmica** que permite adicionar novas tarefas, marcar atividades concluídas e limpar a lista.
 
 Todo o dinamismo da aplicação é controlado pelo **JavaScript**, que também define quando e quais estilos devem ser aplicados na interface.
