@@ -56,7 +56,7 @@ Além disso, as tarefas são armazenadas utilizando o **Local Storage do navegad
 
 [acessar projeto](./projects/todo-list/)
 
-# 📚 Aprendizados
+## 📚 Aprendizados
 
 Durante o desenvolvimento desses projetos eu pratiquei:
 
@@ -82,7 +82,7 @@ Este repositório também foi possível graças a alguns educadores e plataforma
 - **GreatStack (YouTube)**  
   Canal que produz excelentes playlists de projetos utilizando diversas tecnologias. O conteúdo foi uma grande fonte de inspiração para o desenvolvimento dos projetos presentes neste repositório.
 
-# 👨‍💻 Autor
+## 👨‍💻 Autor
 
 Desenvolvido por Guilherme Moreira.
 
