@@ -56,6 +56,17 @@ Além disso, as tarefas são armazenadas utilizando o **Local Storage do navegad
 
 [acessar projeto](./projects/todo-list/)
 
+### 🧠 Quiz App
+![GIF Quiz App](./public/quiz-app.gif)
+
+Aplicação web interativa que permite ao usuário **responder perguntas de múltipla escolha e receber uma pontuação ao final do quiz**.
+
+O projeto utiliza **JavaScript para controlar toda a lógica do quiz**, incluindo a exibição dinâmica das perguntas, a geração automática dos botões de resposta e o controle de navegação entre as questões.
+
+No JavaScript, a aplicação gerencia o **estado do quiz (pergunta atual e pontuação)**, criando os elementos da interface diretamente no DOM e associando eventos de clique a cada resposta. Ao selecionar uma alternativa, o sistema verifica se a resposta está correta, **fornece feedback visual ao usuário e bloqueia novas interações**, exibindo a resposta correta antes de permitir avançar para a próxima pergunta. No final, o aplicativo apresenta o **resultado total e permite reiniciar o quiz**.
+
+[acessar projeto](./projects/quiz-app/)
+
 ## 📚 Aprendizados
 
 Durante o desenvolvimento desses projetos eu pratiquei:

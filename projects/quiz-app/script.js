@@ -75,7 +75,8 @@ function showQuestion(){
     button.textContent = answer.text
     
     respostasBtn.appendChild(button)
-
+    
+    // Colocando data-correct dentro do botão
     if(answer.correct){
         button.dataset.correct = answer.correct
     }
