@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Alert Box-->
+    <div id="alerta" class="w-55 absolute top-10">
+        <div role="alert" class="rounded-md border p-2 shadow-sm border-green-400 bg-green-800 h-10">
+            <div class="flex items-center gap-4 ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-mt-0.5 size-6 text-green-200">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div class="flex-1">
+                    <strong class="block leading-tight font-medium text-green-100">
+                        Copiado
+                    </strong>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="own-container">
+        <h1>Gere um <br><span>Password aleatório</span></h1>
+        <div class="own-display">
+            <input type="text" id="password" placeholder="Password">
+            <img src="./images/copy.png" alt="Copy Icon" onclick="copy()">
+        </div>
+        <button onclick="createKey()"><img src="./images/generate.png" alt="Generate Icon">Gerar Password</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

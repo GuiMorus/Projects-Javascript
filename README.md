@@ -67,6 +67,19 @@ No JavaScript, a aplicação gerencia o **estado do quiz (pergunta atual e pontu
 
 [acessar projeto](./projects/quiz-app/)
 
+### 🔑 Key Generator
+![GIF Quiz App](./public/key-generator.gif)
+
+**Key Generator** é uma aplicação web simples que permite **gerar senhas aleatórias de 16 caracteres de forma rápida e segura**.
+
+O projeto utiliza **JavaScript para controlar toda a lógica de geração da senha**, criando automaticamente uma nova combinação aleatória sempre que o usuário solicita.
+
+Além disso, a interface conta com um **botão de cópia automática**, que permite copiar a senha gerada para a área de transferência com apenas um clique, facilitando o uso em cadastros e sistemas.
+
+Para melhorar a experiência do usuário, o sistema também exibe um **alerta visual confirmando que a senha foi copiada com sucesso**, garantindo um feedback claro após a ação.
+
+[acessar projeto](./projects/key-generator/)
+
 ## 📚 Aprendizados
 
 Durante o desenvolvimento desses projetos eu pratiquei:
