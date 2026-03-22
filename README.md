@@ -80,6 +80,19 @@ Para melhorar a experiência do usuário, o sistema também exibe um **alerta vi
 
 [acessar projeto](./projects/key-generator/)
 
+### 📒 Bloco de Notas
+![GIF Notes App](./public/notes-app.gif)
+
+**Notes App** é uma aplicação web simples que **simula um bloco de notas digital**, permitindo ao usuário criar e gerenciar anotações de forma prática e dinâmica.
+
+O projeto utiliza **JavaScript** para controlar toda a lógica de criação, exibição e remoção das notas, adicionando novos blocos de texto à **interface** sempre que o usuário solicita.
+
+Além disso, a aplicação faz uso do **localStorage** do navegador para **armazenar as anotações**, garantindo que os dados permaneçam salvos mesmo após o recarregamento da página ou fechamento do navegador.
+
+Para melhorar a experiência do usuário, a interface é interativa e responsiva, permitindo adicionar e excluir notas facilmente, tornando o uso simples e intuitivo no dia a dia.
+
+[acessar projeto](./projects/notes-app/)
+
 ## 📚 Aprendizados
 
 Durante o desenvolvimento desses projetos eu pratiquei:
@@ -87,9 +100,20 @@ Durante o desenvolvimento desses projetos eu pratiquei:
 - Manipulação do DOM com JavaScript
 - Consumo de APIs REST
 - Organização de código em aplicações web
-- Uso de Local Storage
-- Criação de interfaces dinâmicas
-- Estruturação de projetos com Vite
+- Persistência de dados no navegador com Local Storage
+- Tratamento e validação de dados de entrada do usuário
+- Programação orientada a eventos (event listeners e interações)
+- Estruturação e organização de código em projetos web
+- Criação de interfaces dinâmicas e interativas
+- Feedback visual para ações do usuário (UX básica)
+- Manipulação de arrays e objetos em JavaScript
+- Lógica de programação aplicada a problemas reais
+- Uso de ferramentas modernas de desenvolvimento (Vite)
+- Versionamento de código com Git
+- Responsividade (CSS / mobile-first)
+- Modularização de código
+- Boas práticas de código
+- Integração com APIs externas
 
 ## 🙏 AGRADECIMENTOS
 
