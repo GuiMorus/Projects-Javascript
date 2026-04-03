@@ -93,6 +93,19 @@ Para melhorar a experiência do usuário, a interface é interativa e responsiva
 
 [acessar projeto](./projects/notes-app/)
 
+### 🎂 Age Calculator
+![GIF Notes App](./public/age-calculator.gif)
+
+**Age Calculator** é uma aplicação web simples que **calcula a idade exata do usuário** a partir da sua data de nascimento, exibindo o resultado em **anos, meses e dias** de forma precisa.
+
+O projeto utiliza **JavaScript** para controlar toda a lógica de cálculo de datas, realizando a diferença entre a data atual e a data selecionada pelo usuário através de um **input do tipo date**, garantindo um resultado atualizado em tempo real.
+
+A interface permite que o usuário escolha sua data de nascimento de forma prática por meio de um **calendário interativo**, e ao clicar no botão de cálculo, o sistema processa e exibe imediatamente a idade detalhada.
+
+Para melhorar a experiência do usuário, a aplicação conta com uma interface simples, intuitiva e responsiva, tornando o uso rápido e acessível em diferentes dispositivos.
+
+[acessar projeto](./projects/age-calculator/)
+
 ## 📚 Aprendizados
 
 Durante o desenvolvimento desses projetos eu pratiquei:
