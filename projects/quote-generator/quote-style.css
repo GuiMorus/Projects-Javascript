@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+:root{
+    --cor: rgb(23, 124, 229);
+}
+
+body{
+    background: #bbc6fa;
+    font-family: "Alegreya", serif;
+}
+
+.quote-box{
+    background-color: white;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+h1{
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    position: relative;
+}
+
+h1::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--cor);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+blockquote{
+    font-size: 26px;
+    min-height: 100px;
+}
+
+blockquote::before, blockquote::after{
+    content: '"';
+}
+
+span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+span::before{
+    content: '';
+    width: 18px;
+    height: 2px;
+    background-color: var(--cor);
+    position: absolute;
+    top: 50%;
+    left: -27px;
+}
+
+.quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    
+}
+
+.quote-box button{
+    background-color: var(--cor);
+    color: white;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#btnx{
+    background-color: #0F1419;
+}

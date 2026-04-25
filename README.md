@@ -106,6 +106,17 @@ Para melhorar a experiência do usuário, a aplicação conta com uma interface 
 
 [acessar projeto](./projects/age-calculator/)
 
+### 💡 Frase do Dia
+![GIF Weather App](./public/quote-generator.gif)
+
+Aplicativo que gera **citações aleatórias** sempre que a página é atualizada ou quando o usuário clica no botão para gerar uma nova citação.
+
+O projeto realiza uma consulta a uma **API gratuita de citações**, recebe o texto originalmente em inglês e, em seguida, envia esse conteúdo para uma **API de tradução**, exibindo a frase final em português na interface.
+
+No JavaScript, a aplicação trabalha com uma pequena **pipeline de dados**, pois segue uma sequência de etapas: busca a citação, extrai o texto e o autor, envia o conteúdo para tradução, recebe o resultado traduzido e atualiza dinamicamente a tela para o usuário.
+
+[acessar projeto](./projects/quote-generator/)
+
 ## 📚 Aprendizados
 
 Durante o desenvolvimento desses projetos eu pratiquei:
